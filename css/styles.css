@@ -38,41 +38,10 @@ footer a:hover
   padding-top: 10px;
 }
 
-
-.wrapper 
-{
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -63px;
-  /*
-    background-color: #4094C1; - google blue
-    background-color: #EEA901; - orange brown
-    
-    #EEA901;
-  background-color: #FFD57C;
-  */
-}
-
 .push 
 {
   height: 63px;
   /* background-color: #4094C1; */
-}
-
-/* not required for sticky footer; just pushes hero down a bit */
-.wrapper > .container 
-{
-  padding-top: 20px;
-}
-
-.wrapperNoColour 
-{
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -63px;
-  background-color: #FFFFFF;
 }
 
 /* 
@@ -125,11 +94,13 @@ footer a:hover
   .whitefont
   {
       color:#EEE;
+      text-align:right; 
   }
 
   .padFirstP
   {
       padding-top: 20px;
+      text-align:center; 
   }
 
 /* 
@@ -410,4 +381,22 @@ only screen and ( -o-min-device-pixel-ratio: 2/1) {
   }
 
 }
+.margin3{
+	margin: 3% 0%;
+}
+/* No Margin left*/
+[class*="span"] {
+    margin-left: 0px;
+}
 
+[class*="span"] {
+    margin-left: 0px;
+}
+
+.row-fluid [class*="span"] {
+    margin-left: 0%;
+}
+
+.row-fluid [class*="span"] {
+    margin-left: 0%;
+}
