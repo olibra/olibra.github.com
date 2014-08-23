@@ -1,0 +1,41 @@
+Error:
+
+
+can not install 'therubyracer' gem:
+
+http://stackoverflow.com/questions/10905820/gem-install-therubyracer-fails-on-mac-os-x-lion
+https://www.ruby-forum.com/topic/4306127
+
+Solution: because there are might be different versions of g++ complier in the system, make sure you are using the one in /usr/bin, and also check the path in bash_profile, make sure the order of those path are the exactly as you want it to be.
+
+reset heroku database
+
+heroku pg:reset DATABASE
+
+
+Log:
+
+1.bootstrap gem vs 2.manual bootstrap install
+
+1. is difficult to setup, required different gems work together
+2. is just copy paste, and add some lines of code
+
+1. is more powerful and convenient for advanced user, who knows where most files are for, and where everything goes.
+2. is easier for beginner, few step needed, does not need to know how the files are structured, but concentrate on result.
+
+1. is difficult to update and remove.
+2. is easier to reverse
+--------------------------------------------------------------
+
+secure password
+
+bluefish(comparison)
+one-way encryption
+virtual variable
+only a hash value stored in database
+build in confirmation
+
+Migration/change database/backup and restore problem
+
+when backup the database or change one database to another, the schema of the migrations is also backup-ed, then when the new database is created, there is conflict between old migration table and new one.
+My solution to solve this is before restore the database, make a copy of the migration table, after restore the data, delete the migration table it restored, and run SQL query to create the new migration table.
