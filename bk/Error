@@ -8,9 +8,19 @@ https://www.ruby-forum.com/topic/4306127
 
 Solution: because there are might be different versions of g++ complier in the system, make sure you are using the one in /usr/bin, and also check the path in bash_profile, make sure the order of those path are the exactly as you want it to be.
 
-reset heroku database
+Heroku assets pipeline problem
+ref. https://devcenter.heroku.com/articles/rails-4-asset-pipeline
 
-heroku pg:reset DATABASE
+When use custom asset, it works fine on the local machine, everything as you expected; but when you uploaded to heroku, it is not display as it was in local. the problem is the assets pipeline process in heroku. It can be solved by several ways, I chosed the simplest way, which to install a third party gem into project to do the job for me.
+
+
+
+
+
+
+
+
+
 
 
 Log:
@@ -25,6 +35,9 @@ Log:
 
 1. is difficult to update and remove.
 2. is easier to reverse
+
+1. what you can use, is limited by how to use it within the gem
+2. what you can use, and how, is based on bootstrap it self, it is depend on the offical docmumentation.
 --------------------------------------------------------------
 
 secure password
